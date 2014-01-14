@@ -40,7 +40,8 @@
             <?php $this->widget('zii.widgets.CMenu',array(
                 'htmlOptions' => array('class' => 'nav navbar-nav navbar-right'),
                 'items'=>array(
-                    array('label' => Yii::t('main', 'About'),    'url'=>array('/site/page', 'view'=>'about')),
+                    array('label' => Yii::t('main', 'Countries'), 'url'=>array('/country')),
+                    array('label' => Yii::t('main', 'About'),     'url'=>array('/site/page', 'view'=>'about')),
                 ),
             )); ?>
         </div><!-- /.navbar-collapse -->
