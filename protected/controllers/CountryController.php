@@ -3,7 +3,7 @@
 class CountryController extends Controller
 {
     /**
-     * Lists all models.
+     * View all models.
      */
     public function actionIndex()
     {
@@ -19,7 +19,7 @@ class CountryController extends Controller
     }
 
     /**
-     * Lists all models.
+     * Lists all models by json
      */
     public function actionList($query)
     {
