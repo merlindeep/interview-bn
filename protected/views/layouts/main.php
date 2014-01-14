@@ -66,6 +66,7 @@
 </div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/typeahead.min.js"></script>
 
 </body>
 

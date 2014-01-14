@@ -23,12 +23,14 @@ return array(
 
     'modules' => array(
         // gii not for production!!!
+        /*
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'12345',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters'=>array('*'),
         ),
+        */
     ),
 
     // application components
@@ -41,6 +43,8 @@ return array(
             'urlFormat' => 'path',
             'rules' => array(
                 'site/<view>' => 'site/page',
+
+                array('country/list',   'pattern'=>'country/list/<query>', 'verb'=>'get'),
 
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
